@@ -1236,14 +1236,14 @@ public class Main5Activity extends Activity {
             Core.exp(gaussianCurveRGB.get(1), gaussianCurveRGB.get(1));
             Core.exp(gaussianCurveRGB.get(2), gaussianCurveRGB.get(2));
 
-            /*
+            
             Mat exposednessWeight = Mat.ones(r,c,CV_64FC1);
             Core.multiply(exposednessWeight,gaussianCurveRGB.get(0),exposednessWeight);
             Core.multiply(exposednessWeight,gaussianCurveRGB.get(1),exposednessWeight);
             Core.multiply(exposednessWeight,gaussianCurveRGB.get(2),exposednessWeight);
             Core.pow(exposednessWeight, w_e, exposednessWeight);
             Core.multiply(weight,exposednessWeight,weight);
-            */
+            
 
             //JND based saliency weight
             //grayScale is 0 to 255
